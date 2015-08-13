@@ -1,0 +1,75 @@
+#wrap{
+    background-color:rgba(1, 1, 1, 0.725);
+    opacity:0.8;
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:100;
+
+}
+#modal{
+    top: 0;
+    left:0;
+    right:0;
+    margin:50px auto;
+    z-index:200;
+    background-color: #FFFFFF;
+    /* фиксированное позиционирование, окно стабильно при прокрутке */
+    position: fixed;
+    border: 1px solid #383838;
+    /* скругление углов */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(border-radius.htc);
+    /* внешняя тень блока */
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+
+}
+.title {
+    display:block;
+    background-color: #ddd;
+    border-bottom:1px solid #ccc;
+    font-weight:bold;
+    padding:10px 15px;
+    text-decoration: none;
+    text-shadow:0 1px 0 #f4f4f4;
+    /* скругление углов */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    behavior: url(border-radius.htc);
+    /* внешняя тень блока */
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+}
+.close {
+    top:10px;
+    right:10px;
+    position:absolute;
+    cursor:pointer;
+    color: #777;
+    text-decoration:none;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.close:hover{
+    font-weight:bold;
+
+}
+
+/* ####Форма обратного звонка#### */
+#formCallme{
+    display:block;
+    width:300px;
+    margin:0 auto;
+    padding:10px;
+}

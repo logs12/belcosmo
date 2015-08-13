@@ -1,0 +1,196 @@
+@import "less/bootstrap.less";
+@import "variables.less";
+
+p {
+  margin: 20px 0;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+body {
+  height: 100%;
+  .wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 150px;
+
+  .container{
+    background-color: #ffffff;
+    padding: 20px 0 20px 0;
+  }
+
+  header {
+    outline: 1px solid #660003;
+
+    #zagolovok{
+      float:left;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: #99005a;
+      text-shadow: #333333 1px 1px 1px;
+      float: left;
+      text-transform: uppercase;
+    }
+    #contakty{
+      /*background-image: url(/bitrix/templates/tovar/components/bitrix/menu/left/images/arrow_down.png../images/contakty.png);*/
+      background-repeat:no-repeat;
+    }
+  }
+
+  /* TOP MENU */
+  .nav {
+    padding-left: 30%;
+  }
+  .navbar {
+    margin:0;
+  }
+  .navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  {
+    color: #ffffff;
+    background-color: #015287;
+  }
+  /* TOP MENU END*/
+
+      .row{
+      margin: 0 auto;
+
+    /* LEFT MENU */
+
+      #accordion ul {
+        padding: 0;
+      }
+      #accordion li {
+        cursor: pointer;
+        //background: url(accordion_bg.png) repeat-x;
+        font-weight: bold;
+        color: #015287;
+        border: 1px solid #b2b2b2;
+        margin-bottom: 2px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        padding: 4px 8px;
+        position: relative;
+      }
+
+      #accordion li.active {
+        color: #D15600;
+        //background-image: url(/bitrix/templates/tovar/components/bitrix/menu/left/images/arrow_down.png);
+      }
+      #accordion li ul {
+        padding: 0;
+        margin: 10px 0 0 0;
+      }
+
+      #accordion li.active li {
+        text-indent: 0;
+      }
+
+      #accordion li li {
+        font-weight: normal;
+        background: none;
+        border: 0;
+      }
+      .glyphicon{
+        position: absolute;
+        left: 90%;
+        top:5px;
+      }
+    } /*end row*/
+  } /*end wrapper*/
+  footer {
+    background: #996688;
+    color: #dbdbdb;
+    font-size: 11px;
+
+    // прижимаем футер книзу, высота связана с блоком "content"
+    height: 140px;
+    margin-top: -140px;
+
+    .container {
+      height: 110px;
+      padding: 10px 0;
+
+      h3 {
+        border-bottom: 1px solid #919191;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: @brand-font;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      .twitter {
+        p {
+          padding-right: 15px;
+        }
+
+        time a {
+          color: #b4aeae;
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        color: #dbdbdb;
+      }
+      .sitemap li{
+        list-style-type: none;
+      }
+
+      .sitemap li a {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      .social {
+        .social-icon {
+          width: 30px;
+          height: 30px;
+          background: url(/local/templates/belcosmo/images/social.png) no-repeat;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .social-icon-small  {
+          width: 16px;
+          height: 16px;
+          background: url(/local/templates/belcosmo/images/social-small.png) no-repeat;
+          display: inline-block;
+          margin: 5px 6px 0 0;
+        }
+
+        .twitter { background-position: 0 0; }
+        .facebook { background-position: -30px 0; }
+        .google-plus { background-position: -60px 0; }
+        .vimeo { background-position: 0 0; }
+        .youtube { background-position: -16px 0; }
+        .flickr { background-position: -32px 0; }
+        .instagram { background-position: -48px 0; }
+        .rss { background-position: -64px 0; }
+      }
+      .footer-logo {
+        float: right;
+        font-size: 10px;
+        text-align: right;
+
+        a {
+          text-decoration: underline;
+        }
+    }
+    }
+  }
+}
